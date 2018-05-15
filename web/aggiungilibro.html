@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="POST" action="biblioteca">
+            
+            <table>
+                <tr>
+                    <td><label for="titolo">Titolo</label></td>
+                    <td><input type="text" id="titolo" name="titolo"></td>
+                </tr>
+                <tr>
+                    <td><label for="autore">Autore</label></td>
+                    <td><input type="text" id="autore" name="autore"></td>
+                </tr>
+                <tr>
+                    <td><label for="genere">Genere</label></td>
+                    <td><input type="text" id="genere" name="genere"></td>
+                </tr> 
+            </table>
+            <input type="submit" name="Invia" value="Aggiungi Libro" />
+            
+        </form>
+        
+        <a href="biblioteca.jsp"> Visualizza biblioteca </a>
+        
+        <form method="GET" action="biblioteca">
+            <input type="hidden" name="logout">
+            <input type="submit" name="Logout" value="Invalida sessione" />
+        </form>
+    </body>
+</html>
